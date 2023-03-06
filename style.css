@@ -143,3 +143,12 @@ body {
   border-radius: 30px;
   display: none;
 }
+.mode {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 5px 0;
+}
+.mode img {
+  width: 70px;
+}
