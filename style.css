@@ -1,8 +1,13 @@
 * {
   box-sizing: border-box;
 }
+:root {
+  --white-color: #dddbdb;
+  --black-color: #1f1d1d;
+}
 body {
   font-family: "Mynerve", cursive;
+  background-color: var(--white-color);
 }
 .control-buttons {
   position: fixed;
@@ -38,11 +43,13 @@ body {
 .info-container .name {
   float: left;
   width: 50%;
+  color: var(--black-color);
 }
 .info-container .tries {
   float: right;
   width: 50%;
   text-align: right;
+  color: var(--black-color);
 }
 .memory-game-blocks {
   display: grid;

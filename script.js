@@ -111,13 +111,13 @@ function shuffle(array) {
 let sun = document.getElementById("sun");
 let moon = document.getElementById("moon");
 // console.log(sun, moon);
-//dark mood
-sun.addEventListener("click", () => {
-  sun.classList.add("sleep");
-  moon.classList.remove("sleep");
-});
 //light mood
 moon.addEventListener("click", () => {
   moon.classList.add("sleep");
   sun.classList.remove("sleep");
+});
+//dark mood
+sun.addEventListener("click", () => {
+  sun.classList.add("sleep");
+  moon.classList.remove("sleep");
 });
