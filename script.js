@@ -115,9 +115,13 @@ let moon = document.getElementById("moon");
 moon.addEventListener("click", () => {
   moon.classList.add("sleep");
   sun.classList.remove("sleep");
+  document.documentElement.style.setProperty("--white-color", "#1f1d1d");
+  document.documentElement.style.setProperty("--black-color", "#dddbdb");
 });
 //dark mood
 sun.addEventListener("click", () => {
   sun.classList.add("sleep");
   moon.classList.remove("sleep");
+  document.documentElement.style.setProperty("--white-color", "#dddbdb");
+  document.documentElement.style.setProperty("--black-color", "#1f1d1d");
 });

@@ -24,7 +24,7 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
   background-color: #f44336;
-  color: #fff;
+  color: var(--white-color);
   padding: 15px 25px;
   font-size: 30px;
   text-align: center;
@@ -33,7 +33,7 @@ body {
 }
 .info-container {
   width: 100%;
-  background-color: #f6f6f6;
+  background-color: var(--white-color);
   padding: 20px;
   font-size: 24px;
   overflow: hidden;
@@ -159,8 +159,8 @@ body {
 .mode img {
   width: 65px;
   cursor: pointer;
-  transition: 0.3s;
 }
 .sleep {
   display: none;
+  transition: .3s;
 }
