@@ -151,6 +151,7 @@ body {
 }
 .mode img {
   width: 65px;
+  cursor: pointer;
 }
 .sleep {
   display: none;
