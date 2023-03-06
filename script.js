@@ -110,3 +110,4 @@ function shuffle(array) {
 // add change mood
 let sun = document.getElementById("sun");
 let moon = document.getElementById("moon");
+// console.log(sun, moon);
