@@ -108,10 +108,16 @@ function shuffle(array) {
   return array;
 }
 // add change mood
-let sun = document.querySelector(".sun");
-let moon = document.getElementsByClassName("moon");
+let sun = document.getElementById("sun");
+let moon = document.getElementById("moon");
 // console.log(sun, moon);
+//dark mood
 sun.addEventListener("click", () => {
-  this.classList.add = "sleep";
-  moon.classList.remove = "sleep";
+  sun.classList.add("sleep");
+  moon.classList.remove("sleep");
+});
+//light mood
+moon.addEventListener("click", () => {
+  moon.classList.add("sleep");
+  sun.classList.remove("sleep");
 });
