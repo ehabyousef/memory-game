@@ -107,4 +107,6 @@ function shuffle(array) {
   }
   return array;
 }
-// add change mood 
+// add change mood
+let sun = document.getElementById("sun");
+let moon = document.getElementById("moon");
