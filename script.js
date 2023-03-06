@@ -112,5 +112,6 @@ let sun = document.getElementById("sun");
 let moon = document.getElementById("moon");
 // console.log(sun, moon);
 sun.addEventListener("click", () => {
-  
+  this.classList.add = "sleep";
+  moon.classList.remove = "sleep";
 });
