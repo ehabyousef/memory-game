@@ -1,156 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Memory Game</title>
-  </head>
-  <body>
-    <div class="control-buttons">
-      <span>Start Game</span>
-    </div>
-    <div class="info-container">
-      <div class="name">Hello: <span></span></div>
-      <div class="tries">Wrong Tries: <span>0</span></div>
-    </div>
-    <div class="finish">🥳اخيراا يعم الحج</div>
-    <div id="endgame">🤓 عيل بعقل سمكه</div>
-    <div class="memory-game-blocks">
-      <div class="game-block" data-technology="luffy">
-        <div class="face front"></div>
-        <div class="face back">
-          <img decoding="async" src="images/bob.jpg" alt="" />
-        </div>
-      </div>
-      <div class="game-block" data-technology="luffy">
-        <div class="face front"></div>
-        <div class="face back">
-          <img decoding="async" src="images/bob.jpg" alt="" />
-        </div>
-      </div>
-      <div class="game-block" data-technology="naruto">
-        <div class="face front"></div>
-        <div class="face back">
-          <img decoding="async" src="images/badr.jpg"" />
-        </div>
-      </div>
-      <div class="game-block" data-technology="naruto">
-        <div class="face front"></div>
-        <div class="face back">
-          <img decoding="async" src="images/badr.jpg" alt="" />
-        </div>
-      </div>
-      <div class="game-block" data-technology="zoro">
-        <div class="face front"></div>
-        <div class="face back">
-          <img decoding="async" src="images/khairy.jpg" alt="" />
-        </div>
-      </div>
-      <div class="game-block" data-technology="zoro">
-        <div class="face front"></div>
-        <div class="face back">
-          <img decoding="async" src="images/khairy.jpg" alt="" />
-        </div>
-      </div>
-      <div class="game-block" data-technology="itachi">
-        <div class="face front"></div>
-        <div class="face back">
-          <img decoding="async" src="images/qaysar.jpg" alt="" />
-        </div>
-      </div>
-      <div class="game-block" data-technology="itachi">
-        <div class="face front"></div>
-        <div class="face back">
-          <img decoding="async" src="images/qaysar.jpg" alt="" />
-        </div>
-      </div>
-      <div class="game-block" data-technology="shikamaru">
-        <div class="face front"></div>
-        <div class="face back">
-          <img decoding="async" src="images/jhon.jpg" alt="" />
-        </div>
-      </div>
-      <div class="game-block" data-technology="shikamaru">
-        <div class="face front"></div>
-        <div class="face back">
-          <img decoding="async" src="images/jhon.jpg" alt="" />
-        </div>
-      </div>
-      <div class="game-block" data-technology="kakashi">
-        <div class="face front"></div>
-        <div class="face back">
-          <img decoding="async" src="images/mina.jpg" alt="" />
-        </div>
-      </div>
-      <div class="game-block" data-technology="kakashi">
-        <div class="face front"></div>
-        <div class="face back">
-          <img decoding="async" src="images/mina.jpg" alt="" />
-        </div>
-      </div>
-      <div class="game-block" data-technology="sanji">
-        <div class="face front"></div>
-        <div class="face back">
-          <img decoding="async" src="images/aza.jpg" alt="" />
-        </div>
-      </div>
-      <div class="game-block" data-technology="sanji">
-        <div class="face front"></div>
-        <div class="face back">
-          <img decoding="async" src="images/aza.jpg" alt="" />
-        </div>
-      </div>
-      <div class="game-block" data-technology="zaraki">
-        <div class="face front"></div>
-        <div class="face back">
-          <img decoding="async" src="images/tefa.jpg" alt="" />
-        </div>
-      </div>
-      <div class="game-block" data-technology="zaraki">
-        <div class="face front"></div>
-        <div class="face back">
-          <img decoding="async" src="images/tefa.jpg" alt="" />
-        </div>
-      </div>
-      <div class="game-block" data-technology="kilua">
-        <div class="face front"></div>
-        <div class="face back">
-          <img decoding="async" src="images/ahmed.jpg" alt="" />
-        </div>
-      </div>
-      <div class="game-block" data-technology="kilua">
-        <div class="face front"></div>
-        <div class="face back">
-          <img decoding="async" src="images/ahmed.jpg" alt="" />
-        </div>
-      </div>
-      <div class="game-block" data-technology="gon">
-        <div class="face front"></div>
-        <div class="face back">
-          <img decoding="async" src="images/rash.jpg" alt="" />
-        </div>
-      </div>
-      <div class="game-block" data-technology="gon">
-        <div class="face front"></div>
-        <div class="face back">
-          <img decoding="async" src="images/rash.jpg" alt="" />
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Memory Game</title>
+</head>
+
+<body>
+  <div class="control-buttons">
+    <span>Start Game</span>
+  </div>
+  <div class="info-container">
+    <div class="name">Hello: <span></span></div>
+    <div class="tries">Wrong Tries: <span>0</span> max is 10</div>
+  </div>
+  <div class="finish">🥳اخيراا يعم الحج</div>
+  <div id="endgame">🤓 عيل بعقل سمكه</div>
+  <div class="memory-game-blocks">
+    <div class="game-block" data-technology="luffy">
+      <div class="face front"></div>
+      <div class="face back">
+        <img decoding="async" src="images/bob.jpg" alt="" />
       </div>
     </div>
-    <div class="mode">
-      <img class="sleep" id="sun" src="images/icons8-sun-star-100.png" alt="" />
-      <img
-        class=""
-        id="moon"
-        src="images/icons8-moon-and-stars-100.png"
-        alt=""
-      />
+    <div class="game-block" data-technology="luffy">
+      <div class="face front"></div>
+      <div class="face back">
+        <img decoding="async" src="images/bob.jpg" alt="" />
+      </div>
     </div>
-    <audio id="success" src="audio/succes.mp3" preload="auto"></audio>
-    <audio id="fail" src="audio/fail-buzzer-03.mp3" preload="auto"></audio>
-    <audio id="end" src="audio/finish.mp3" preload="auto"></audio>
-    <audio id="lose" src="audio/ahhhhhhhhhhhhhh.mp3" preload="auto"></audio>
-    <script src="script.js"></script>
-  </body>
+    <div class="game-block" data-technology="shikamaru">
+      <div class="face front"></div>
+      <div class="face back">
+        <img decoding="async" src="images/shikamaru.jpg" alt="" />
+      </div>
+    </div>
+    <div class="game-block" data-technology="shikamaru">
+      <div class="face front"></div>
+      <div class="face back">
+        <img decoding="async" src="images/shikamaru.jpg" alt="" />
+      </div>
+    </div>
+    <div class="game-block" data-technology="kakashi">
+      <div class="face front"></div>
+      <div class="face back">
+        <img decoding="async" src="images/kakashi.jpg" alt="" />
+      </div>
+    </div>
+    <div class="game-block" data-technology="kakashi">
+      <div class="face front"></div>
+      <div class="face back">
+        <img decoding="async" src="images/kakashi.jpg" alt="" />
+      </div>
+    </div>
+    <div class="game-block" data-technology="sanji">
+      <div class="face front"></div>
+      <div class="face back">
+        <img decoding="async" src="images/sanji.jpg" alt="" />
+      </div>
+    </div>
+    <div class="game-block" data-technology="sanji">
+      <div class="face front"></div>
+      <div class="face back">
+        <img decoding="async" src="images/sanji.jpg" alt="" />
+      </div>
+    </div>
+    <div class="game-block" data-technology="zaraki">
+      <div class="face front"></div>
+      <div class="face back">
+        <img decoding="async" src="images/zaraki.jpg" alt="" />
+      </div>
+    </div>
+    <div class="game-block" data-technology="zaraki">
+      <div class="face front"></div>
+      <div class="face back">
+        <img decoding="async" src="images/zaraki.jpg" alt="" />
+      </div>
+    </div>
+    <div class="game-block" data-technology="kilua">
+      <div class="face front"></div>
+      <div class="face back">
+        <img decoding="async" src="images/kilua.jpg" alt="" />
+      </div>
+    </div>
+    <div class="game-block" data-technology="kilua">
+      <div class="face front"></div>
+      <div class="face back">
+        <img decoding="async" src="images/kilua.jpg" alt="" />
+      </div>
+    </div>
+    <div class="game-block" data-technology="gon">
+      <div class="face front"></div>
+      <div class="face back">
+        <img decoding="async" src="images/gon.jpg" alt="" />
+      </div>
+    </div>
+    <div class="game-block" data-technology="gon">
+      <div class="face front"></div>
+      <div class="face back">
+        <img decoding="async" src="images/gon.jpg" alt="" />
+      </div>
+    </div>
+  </div>
+  <div class="mode">
+    <img class="sleep" id="sun" src="images/icons8-sun-star-100.png" alt="" />
+    <img class="" id="moon" src="images/icons8-moon-and-stars-100.png" alt="" />
+  </div>
+  <audio id="success" src="audio/succes.mp3" preload="auto"></audio>
+  <audio id="fail" src="audio/fail-buzzer-03.mp3" preload="auto"></audio>
+  <audio id="end" src="audio/finish.mp3" preload="auto"></audio>
+  <audio id="lose" src="audio/ahhhhhhhhhhhhhh.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+
 </html>

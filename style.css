@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 :root {
-  --white-color: #dddbdb;
+  --white-color: rgb(197, 192, 192);
   --black-color: #1f1d1d;
 }
 body {
@@ -37,7 +37,7 @@ body {
   padding: 20px;
   font-size: 24px;
   overflow: hidden;
-  border: 2px solid #2196f3;
+  border: 2px solid #33f321;
   display: flex;
 }
 .info-container .name {
@@ -53,7 +53,25 @@ body {
 }
 .memory-game-blocks {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+@media (min-width: 1450px) {
+  .memory-game-blocks {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+}
+@media (max-width: 1200px) {
+  .memory-game-blocks {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+}
+@media (max-width: 600px) {
+  .memory-game-blocks {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
 }
 .memory-game-blocks.no-clicking {
   pointer-events: none;
@@ -66,7 +84,7 @@ body {
   position: relative;
 }
 .memory-game-blocks .game-block .front {
-  background-color: #333;
+  background-color: #333333;
   line-height: 200px;
 }
 .memory-game-blocks .game-block .front:before {
@@ -76,12 +94,13 @@ body {
   font-weight: bold;
 }
 .memory-game-blocks .game-block .back {
-  background-color: #607d8b;
+  background-color: #28362e;
   transform: rotateY(180deg);
   overflow: hidden;
 }
 .memory-game-blocks .game-block .back img {
-  width: 80%;
+  width: 60%;
+  height: 100%;
   /* height: 140px; */
   /* margin-top: 30px; */
 }
@@ -91,7 +110,7 @@ body {
   height: 100%;
   text-align: center;
   backface-visibility: hidden;
-  border: 5px solid #2196f3;
+  border: 5px solid #21f356;
 }
 .memory-game-blocks .game-block.is-flipped,
 .memory-game-blocks .game-block.has-match {
@@ -162,5 +181,5 @@ body {
 }
 .sleep {
   display: none;
-  transition: .3s;
+  transition: 0.3s;
 }
